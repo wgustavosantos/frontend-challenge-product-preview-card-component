@@ -121,7 +121,7 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 200px) {
 
     body {
         display: flex;
@@ -134,6 +134,7 @@ body {
     .container {
         flex-direction: column;
         width: 90%;
+        min-width: 350px;
     }
 
     .container__imagem {
