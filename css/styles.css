@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500&display=swap');
+
+:root {
+    --cor-branca: hsl(0, 0%, 100%);
+    --cor-cream: hsl(30, 38%, 92%);
+    --cor-dark-cyan: hsl(158, 36%, 37%);
+    --cor-dark-blue: hsl(212, 21%, 14%);
+    --cor-dark-grey-blue: hsl(228, 12%, 48%);
+    --fonte-montserrat: 'Montserrat';
+    --fonte-fraunces: 'Fraunces';
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--cor-cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: var(--cor-branca);
+    width: 624px;
+    border-radius: 10px;
+}
+
+.container__imagem {
+    flex-shrink: 0;
+    border-radius: 10px 0 0 10px;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 312px;
+    height: 467px;
+    
+}
+
+.container__informacao {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+    width: 50%;
+}
+
+.container__informacao h2 {
+    font-weight: 500;
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-dark-grey-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    }
+
+.container__informacao h1 {
+    line-height: 0.99em;
+    margin: 0.8em 0;
+    font-size: 2.4em;
+    font-family: var(--fonte-fraunces);
+}
+
+.container__informacao > p {
+    font-family: var(--fonte-montserrat);
+   line-height: 1.6em;
+   color: var(--cor-dark-grey-blue);
+}
+
+.container__preco {
+    margin: 2em 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.container__preco-desconto {
+    font-size: 2em;
+    font-family: var(--fonte-fraunces);
+    color: var(--cor-dark-cyan);
+}
+
+.container__preco-original {
+    font-size: 0.9em;
+    font-family: var(--fonte-montserrat);
+    text-decoration: line-through;
+    color: var(--cor-dark-grey-blue);
+}
+
+.container__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1.2em;
+    background-color: var(--cor-dark-cyan);
+    color: var(--cor-branca);
+    border-radius: 7px;
+    border: none;
+}
+
+.container__botao p {
+    font-family: var(--fonte-montserrat);
+    font-weight: 700;
+}
+
+.attribution {
+    margin-top: 5%;
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-dark-grey-blue);
+} 
+
+.attribution a {
+    text-decoration: none;
+}
+
+@media (max-width: 390px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 1em; */
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container__imagem {
+        /* display: none; */
+        flex-shrink: 0;
+    border-radius: 10px 10px 0 0;
+    background-image: url('../images/image-product-mobile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 351px;
+    height: 246px;
+    }
+
+    .container__informacao {
+        width: 100%;
+    }
+    .container__informacao h1 {
+        margin: 0.6em 0;
+     
+            font-size: 2.1em;
+    }
+    
+    .attribution {
+        margin: 1em 1.5em;
+        text-align: center;
+    }
+}
