@@ -43,7 +43,7 @@ body {
     background-position: center;
     width: 312px;
     height: 467px;
-    
+
 }
 
 .container__informacao {
@@ -59,7 +59,7 @@ body {
     color: var(--cor-dark-grey-blue);
     text-transform: uppercase;
     letter-spacing: 0.4em;
-    }
+}
 
 .container__informacao h1 {
     line-height: 0.99em;
@@ -68,10 +68,10 @@ body {
     font-family: var(--fonte-fraunces);
 }
 
-.container__informacao > p {
+.container__informacao>p {
     font-family: var(--fonte-montserrat);
-   line-height: 1.6em;
-   color: var(--cor-dark-grey-blue);
+    line-height: 1.6em;
+    color: var(--cor-dark-grey-blue);
 }
 
 .container__preco {
@@ -115,7 +115,7 @@ body {
     margin-top: 5%;
     font-family: var(--fonte-montserrat);
     color: var(--cor-dark-grey-blue);
-} 
+}
 
 .attribution a {
     text-decoration: none;
@@ -134,30 +134,32 @@ body {
     .container {
         flex-direction: column;
         width: 90%;
+        max-width: 350px;
         min-width: 350px;
     }
 
     .container__imagem {
         /* display: none; */
         flex-shrink: 0;
-    border-radius: 10px 10px 0 0;
-    background-image: url('../images/image-product-mobile.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 351px;
-    height: 246px;
+        border-radius: 10px 10px 0 0;
+        background-image: url('../images/image-product-mobile.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 351px;
+        height: 246px;
     }
 
     .container__informacao {
         width: 100%;
     }
+
     .container__informacao h1 {
         margin: 0.6em 0;
-     
-            font-size: 2.1em;
+
+        font-size: 2.1em;
     }
-    
+
     .attribution {
         margin: 1em 1.5em;
         text-align: center;
